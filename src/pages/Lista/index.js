@@ -5,12 +5,12 @@ export default function Lista({ navigate }){
     
     return(
         <View 
-        style={{ 
-            flex: 1, 
-            alignItems: "center", 
-            justifyContent: "center",            
-            backgroundColor: "#757",
-            }}
+            style={{ 
+                flex: 1, 
+                alignItems: "center", 
+                justifyContent: "center",            
+                backgroundColor: "#757",
+                }}
         >
             
             <Text 
@@ -19,7 +19,8 @@ export default function Lista({ navigate }){
                     marginTop: 20,
                     fontSize: 20,
                     paddingBottom:10
-                }}>
+                }}
+            >
                 Ciência Cristã
             </Text>
 

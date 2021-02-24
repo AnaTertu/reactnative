@@ -13,10 +13,10 @@ export default function Loja(props) {
 
     return (
         <View 
-        style={{ 
-            flex: 1, 
-            paddingLeft: 20,            
-            backgroundColor: "#757"
+            style={{ 
+                flex: 1, 
+                paddingLeft: 20,            
+                backgroundColor: "#757"
             }}
         >
             

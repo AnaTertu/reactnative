@@ -19,10 +19,11 @@ export default function Home(props) {
                 style={{ height: 100, width: 100 }}
                 source={require("../../../assets/images/igrejamae.webp")}
             />
+
             <Text style={{ color: "#fff", marginTop: 10, paddingBottom: 20}}>
                 O que é a Ciência Cristã?
-                {"\n"}
             </Text>
+
             <Text
                 style={{
                     flexDirection: "row",
@@ -30,8 +31,7 @@ export default function Home(props) {
                     fontSize: 12,
                     alignText: "center",
                     paddingLeft: 30,
-                    paddingRight:30,
-                    paddingTop: 30
+                    paddingRight:30
                 }}
             >
                 É a Ciência do Cristianismo, a aplicação prática de idéias
@@ -39,14 +39,12 @@ export default function Home(props) {
                 sistema de cura fundado sobre as verdades universais da Bíblia. {"\n"}
                 Pessoas de todas as religiões estudam a Ciência Cristã e
                 são inspiradas e curadas pelas idéias do seu livro principal,
-                {"\n"}
             </Text>
+
             <Text
                 style={{
-                    flexDirection: "row",
                     color: "#fff",
-                    fontSize: 12,
-                    alignText: "center",
+                    fontSize: 15,
                     paddingLeft: 30,
                     paddingRight:30,
                     paddingTop: 10
@@ -54,12 +52,11 @@ export default function Home(props) {
             >
                 Ciência e Saúde com a Chave das Escrituras, de Mary Baker Eddy.
             </Text>
+
             <TouchableOpacity
                 style={{
-                    width: 90,
-                    height: 30,
                     borderRadius: 5,
-                    marginTop: 15,
+                    paddingTop: 15
                 }}
                 title="Ir para Lista"
                 onPress={() => navigation.navigate("Lista")}
@@ -74,11 +71,11 @@ export default function Home(props) {
                     Lista
                 </Text>
             </TouchableOpacity>
+
             <TouchableOpacity
                 style={{
-                    width: 90,
-                    height: 30,
                     borderRadius: 5,
+                    paddingTop: 15
                 }}
                 title="Ir para Loja"
                 onPress={() => navigation.navigate("Loja")}
@@ -93,11 +90,11 @@ export default function Home(props) {
                     Loja
                 </Text>
             </TouchableOpacity>
+
             <TouchableOpacity
                 style={{
-                    width: 90,
-                    height: 30,
                     borderRadius: 5,
+                    paddingTop: 15
                 }}
                 title="Ir para Carrinho"
                 onPress={() => navigation.navigate("Carrinho")}
@@ -114,17 +111,38 @@ export default function Home(props) {
             </TouchableOpacity>
             
             <TouchableOpacity
-                onPress={() => navigation.navigate("Loja")}
+                onPress={() => navigation.navigate("Login")}
                 style={{
                     borderRadius: 35,
                     width: 30,
                     height: 30,
-                    alignItems: 'center',
-                    justifyContent: 'center'
+                    paddingTop: 15
                 }}
             >
                 <Ionicons name='ios-add' color='#fff' size={30} />
             </TouchableOpacity>
+            
+            <View>
+                <TouchableOpacity
+                        title='Login'
+                        onPress={() => 
+                        navigation.navigate('Login')}
+                    >
+
+                        <Text
+                            style={{
+                                fontWeight: "bold",
+                                color: "#400",
+                                fontSize: 20,
+                                paddingTop: 20,
+                                paddingLeft: 250
+                            }}
+                        >
+                            Login
+                        </Text>
+                    </TouchableOpacity>
+            </View>
+            
         </View>
     );
 }
