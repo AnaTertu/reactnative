@@ -1,7 +1,7 @@
-import TodosProdutos from '../redux/todosProdutos';
+// import TodosProdutos from '../redux/todosProdutos';
 
-const initialState = [...TodosProdutos];
+// const initialState = [...TodosProdutos];
 
-export default (state = initialState, actions) => { 
-    return state;
-};
+// export default (state = initialState, actions) => { 
+//     return state;
+// };

@@ -16,31 +16,44 @@ export default function Home(props) {
             }}
         >
             <Image
-                style={{ height: 128, width: 128, marginTop: 10 }}
+                style={{ height: 100, width: 100 }}
                 source={require("../../../assets/images/igrejamae.webp")}
             />
-            <Text style={{ color: "#fff", marginTop: 10, fontFamily: "Reggae One, cursive" }}>
+            <Text style={{ color: "#fff", marginTop: 10, paddingBottom: 20}}>
                 O que é a Ciência Cristã?
+                {"\n"}
             </Text>
             <Text
                 style={{
                     flexDirection: "row",
                     color: "#fff",
                     fontSize: 12,
-                    width: 400,
-                    height: 100,
+                    alignText: "center",
+                    paddingLeft: 30,
+                    paddingRight:30,
+                    paddingTop: 30
                 }}
             >
-                É a Ciência do Cristianismo, {"\n"}a aplicação prática de idéias
-                cristãs na vida diária.{"\n"}É tanto um ensino religioso como um
-                sistema de cura fundado {"\n"}
-                sobre as verdades universais da Bíblia. {"\n"}
-                Pessoas de todas as religiões estudam a Ciência Cristã {"\n"}e
-                são inspiradas e curadas pelas idéias do seu livro principal,{" "}
+                É a Ciência do Cristianismo, a aplicação prática de idéias
+                cristãs na vida diária. É tanto um ensino religioso como um
+                sistema de cura fundado sobre as verdades universais da Bíblia. {"\n"}
+                Pessoas de todas as religiões estudam a Ciência Cristã e
+                são inspiradas e curadas pelas idéias do seu livro principal,
                 {"\n"}
+            </Text>
+            <Text
+                style={{
+                    flexDirection: "row",
+                    color: "#fff",
+                    fontSize: 12,
+                    alignText: "center",
+                    paddingLeft: 30,
+                    paddingRight:30,
+                    paddingTop: 10
+                }}
+            >
                 Ciência e Saúde com a Chave das Escrituras, de Mary Baker Eddy.
             </Text>
-            {"\n"}
             <TouchableOpacity
                 style={{
                     width: 90,
@@ -56,7 +69,6 @@ export default function Home(props) {
                         fontWeight: "bold",
                         color: "#400",
                         fontSize: 20,
-                        fontFamily: "Reggae One, cursive"
                     }}
                 >
                     Lista
@@ -76,7 +88,6 @@ export default function Home(props) {
                         fontWeight: "bold",
                         color: "#400",
                         fontSize: 20,
-                        fontFamily: "Reggae One, cursive"
                     }}
                 >
                     Loja
@@ -96,7 +107,6 @@ export default function Home(props) {
                         fontWeight: "bold",
                         color: "#400",
                         fontSize: 18,
-                        fontFamily: "Reggae One, cursive"
                     }}
                 >
                     Carrinho
@@ -104,7 +114,7 @@ export default function Home(props) {
             </TouchableOpacity>
             
             <TouchableOpacity
-                onPress={() => navigation.navigate("Carrinho")}
+                onPress={() => navigation.navigate("Loja")}
                 style={{
                     borderRadius: 35,
                     width: 30,

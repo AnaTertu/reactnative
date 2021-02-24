@@ -1,9 +1,9 @@
-import { combineReducers} from 'redux';
-//import Produtos from '../pages/Produtos';
-import TodosProdutos from './todosProdutos';
+// import { combineReducers} from 'redux';
+// //import Produtos from '../pages/Produtos';
+// import TodosProdutos from './todosProdutos';
 
-export default combineReducers({
-    //Produtos, 
-    TodosProdutos,
+// export default combineReducers({
+//     //Produtos, 
+//     TodosProdutos,
     
-})
+// })

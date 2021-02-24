@@ -13,10 +13,18 @@ export default function Lista({ navigate }){
             }}
         >
             
-            <Text style= {{ color: "#fff", fontSize: 20, fontFamily: "Reggae One, cursive"}}>Ciência Cristã</Text>
+            <Text 
+                style= {{ 
+                    color: "#fff",
+                    marginTop: 20,
+                    fontSize: 20,
+                    paddingBottom:10
+                }}>
+                Ciência Cristã
+            </Text>
 
-            <Text style= {{ color: "#fff", fontSize: 16, fontFamily: "Reggae One, cursive" }}>
-                Aqui você pode ler estes e outros livros na Biblioteca:
+            <Text style= {{ color: "#fff", fontSize: 10 }}>
+                Na sala de leitura você pode ler estes e outros livros na Biblioteca:
             </Text>
             
             <FlatList
@@ -25,20 +33,18 @@ export default function Lista({ navigate }){
                     {key: '• Rudimentos da Ciência Divina / Não e Sim'},
                     {key: '• Um Mundo Mais Luminoso'},
                     {key: '• Retrospecção e Introspecção'},
-                    {key: '• Mary Baker Eddy - Uma Vida Dedicada à Cura'},
                     {key: '• Manual da Igreja'},
+                    {key: '• Mary Baker Eddy - Uma Vida Dedicada à Cura'},
+                    {key: '...dentre outros exemplares... '}
                 ]}
 
-                    renderItem={({item}) => <Text style={{  color: "#fff", padding: 10, fontSize: 15, height: 44,}}>{item.key}</Text>
+                    renderItem={({item}) => <Text style={{  color: "#fff", padding: 8, fontSize: 12 }}>{item.key}</Text>
                     
                 }
             />
-
             <Image
-                source={require('../../../assets/images/map-igrej-sp.PNG')} 
-                style={{ width: 250, height: 200}} 
-                resizeMode="contain-inline" 
-                key="1"
+                style={{ height: 200, width: 200, paddingTop: -80 }}
+                source={require("../../../assets/images/mapa.jpg")}
             />
 
             <Text style= {{ color: "#000", fontSize: 10 }}>
